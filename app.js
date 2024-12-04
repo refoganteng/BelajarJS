@@ -47,15 +47,61 @@ if (iniHari === "Senin") {
 //   console.log("A");
 // }
 
-const password = prompt("Buat Passwordmu : ");
+// const password = prompt("Buat Passwordmu : ");
 
 //password harus 6 karakter
-if (password.length >= 6) {
-  if (password.indexOf(" ") === -1) {
-    console.log("Password VALID");
-  } else {
-    console.log("Password tidak boleh ada spasi");
-  }
-} else {
-  console.log("Minimal 6 karkter bro");
+// if (password.length >= 6) {
+//   if (password.indexOf(" ") === -1) {
+//     console.log("Password VALID");
+//   } else {
+//     console.log("Password tidak boleh ada spasi");
+//   }
+// } else {
+//   console.log("Minimal 6 karkter bro");
+// }
+
+// let umur = prompt('berapa usiamu');
+// let gender = 'male';
+
+// if (gender === 'male' && umur >= 19) {
+//   console.log("BOLEH KERJA JADI KULI BANGUNAN!")
+// } else {
+//   console.log("Di rumah aja nonton TV ya")
+// }
+
+// const role = prompt('masukkan role kamu');
+
+// if (role === 'admin' || role === 'spv') { 
+//   console.log('Silahkan akses bro');
+// } else {
+//   console.log('Gak boleh akses bro, maap')
+// }
+
+let hari = prompt('isi hari ke'); // Misalnya hari ini adalah hari ke-3
+
+switch (hari) {
+    case 1:
+        console.log("Senin");
+        break;
+    case 2:
+        console.log("Selasa");
+        break;
+    case 3:
+        console.log("Rabu");
+        break;
+    case 4:
+        console.log("Kamis");
+        break;
+    case 5:
+        console.log("Jumat");
+        break;
+    case 6:
+        console.log("Sabtu");
+        break;
+    case 7:
+        console.log("Minggu");
+        break;
+    default:
+        console.log("Input hari tidak valid");
 }
+
