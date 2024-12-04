@@ -105,3 +105,5 @@ switch (hari) {
         console.log("Input hari tidak valid");
 }
 
+// array
+let warna = ['hijau', 'kuning', 'biru', 'kelabu'];
