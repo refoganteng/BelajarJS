@@ -111,7 +111,7 @@
 // //object
 
 
-// //looping
+// //looping for
 
 // for (let i = 0; i <= 20; i++) {
 //   console.log('Menuliskan angka '+i);
@@ -152,4 +152,77 @@ for (let i = 0; i < studentrow.length; i++) {
   for (let j = 0; j < row.length; j++) {
     console.log(`     ${row[j]}`);
   }
+}
+ // loop with WHILE
+let num = 0;
+while (num < 10) {
+  console.log(num);
+  num++;
+}
+
+// const passwordadmin = 'Pass123';
+// let guess = prompt('enter your password');
+// while (guess !== passwordadmin) {
+//   guess = prompt("enter your password");
+// }
+// alert('congrats! kamu benar-benar admin');
+
+// let input = prompt('hey, say something!');
+// while (true) {
+//   input = prompt(input);
+//   if (input.toLowerCase() === 'stop') break;
+// }
+
+// alert('oke gue stop');
+
+// let maximum = parseInt(prompt("Masukkan nilai maksimal!"));
+// while (!maximum || maximum <= 0) {
+//   maximum = parseInt(prompt("Masukkan nilai maksimal yang valid!"));
+// }
+
+// const targetNum = Math.floor(Math.random() * maximum) + 1;
+// console.log(`Target Number (debug): ${targetNum}`);
+
+// let guess = parseInt(prompt("Masukkan tebakan pertama kamu!"));
+// let attempt = 1;
+// const maxAttempts = 5;
+
+// while (guess !== targetNum && attempt < maxAttempts) {
+//   if (guess > targetNum) {
+//     guess = parseInt(prompt("Terlalu tinggi! Coba lagi broo!"));
+//   } else if (guess < targetNum) {
+//     guess = parseInt(prompt("Terlalu rendah! Coba lagi broo!"));
+//   }
+
+//   if (!guess) {
+//     alert("Masukkan tebakan berupa angka, ya!");
+//   }
+
+//   attempt++;
+// }
+
+// if (guess === targetNum) {
+//   alert(`NAH BENER!! Tebakan kamu tepat setelah ${attempt} kali mencoba!`);
+// } else {
+//   alert(
+//     `Wah, kamu sudah mencoba ${maxAttempts} kali dan belum berhasil. Jawabannya adalah ${targetNum}.`
+//   );
+// }
+
+
+const fruits = ['apel', 'mangga', 'lemon', 'mengkudu'];
+for (let fruit of fruits) {
+  console.log(`Buah ${fruit}`);
+}
+
+const studentsScore = {
+  oliv: 20,
+  revo: 31,
+  naomi: 45,
+  mateo: 90,
+  kara: 83,
+};
+
+for (let student in studentsScore) {
+  console.log(`${student} memiliki nilai ${studentsScore[student]}`);
 }
