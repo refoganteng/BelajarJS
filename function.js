@@ -49,3 +49,38 @@ function lamarkerja() {
     }
     orangdalam();
 }
+
+const pangkat = function power(nilai) {
+    return nilai * nilai;
+}
+console.log(pangkat(10));
+
+//func sbg argument func lain.
+function duaKali(func) {
+    func()
+    func()
+}
+
+function lemparDadu() {
+    const nilai = Math.floor(Math.random() * 6) + 1;
+    console.log(nilai);
+}
+
+duaKali(lemparDadu) //lempar dadunya gausah pake kurung, karena sbg argument
+
+
+//
+function hasilnyaFunction() {
+    const acak = Math.random();
+    if (acak > 0.1) {
+        return function() {
+            console.log('Selamat, angkanya lebih besar');
+        };
+    } else {
+        return function() {
+            console.log('Maaf, mungkin bisa coba lagi');
+        };
+    }
+}
+const hasilAkhir = hasilnyaFunction();
+console.log(hasilAkhir());

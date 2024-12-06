@@ -226,3 +226,4 @@ const studentsScore = {
 for (let student in studentsScore) {
   console.log(`${student} memiliki nilai ${studentsScore[student]}`);
 }
+
